@@ -23,7 +23,6 @@ export const NotebookForm = (): ReactElement => {
 
   // handlers
   const handleAddNote = ({ category, title, content }: NotebookFormInputs) => {
-    console.log(title, category, content);
     addNote({
       id: Math.random().toString(36).substring(2, 7),
       title,
